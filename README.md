@@ -1,44 +1,44 @@
 # StorageBot
 
-**StorageBot** — это простой Telegram бот, написанный на `aiogram3`, который позволяет пользователям загружать файлы и получать их уникальный файл ID. Этот файл ID может быть использован для доступа к загруженному файлу. Бот можно использовать как своеобразный обменник файлов, где любой пользователь, знающий файл ID, может получить доступ к соответствующему файлу.
+**StorageBot** is a simple Telegram bot built with `aiogram3` that allows users to upload files and retrieve their unique Telegram file ID. This file ID can then be used by anyone to access and download the uploaded file. The bot functions as a lightweight file-sharing platform, where anyone who knows the file ID can retrieve the corresponding file.
 
-## Функциональность
+## Features
 
-- **Загрузка файла**: Пользователь отправляет файл боту.
-- **Получение файла ID**: Бот отвечает пользователю с уникальным ID загруженного файла.
-- **Обмен файлами**: Любой пользователь, имеющий файл ID, может получить доступ к этому файлу, что делает StorageBot удобным для обмена файлами.
+- **File Upload**: Users can send any file directly to the bot.
+- **File ID Retrieval**: The bot instantly responds with the unique ID of the uploaded file.
+- **File Sharing**: Any user with the specific file ID can access and download the file, making StorageBot a convenient tool for quick sharing.
 
-## Важное предупреждение
+## Important Disclaimer
 
-**StorageBot не защищает файлы паролем или другими методами аутентификации.** Если кто-то получит файл ID, он сможет загрузить файл, связанный с этим ID.
+**StorageBot does not protect files with passwords or any other authentication methods.** If someone obtains a file ID, they will be able to download the file associated with it.
 
-**Пожалуйста, не отправляйте боту следующие типы файлов:**
-- Нюдсы или другие материалы личного характера.
-- Важные документы (например, паспорт, водительское удостоверение и т.д.).
-- Файлы с конфиденциальной или чувствительной информацией.
+**Please do not send the following types of files to the bot:**
+- Nudes or any other explicit/personal materials.
+- Important documents (e.g., passports, driver's licenses, ID cards, etc.).
+- Files containing confidential or sensitive data.
 
-**StorageBot** предназначен для обмена общедоступными или неважными файлами. Используйте его с осторожностью!
+**StorageBot** is strictly intended for sharing public or non-sensitive files. Use it with caution!
 
-## Установка и использование
+## Installation & Usage
 
-1. **Клонируйте репозиторий**:
-    ```sh
-    git clone https://github.com/YanniszY/StorageTGbot.git
+1. **Clone the repository**:
+```sh
+    git clone [https://github.com/YanniszY/StorageTGbot.git](https://github.com/YanniszY/StorageTGbot.git)
     ```
-   
-2. **Установите зависимости**:
-    ```sh
+
+2. **Install dependencies**:
+```sh
     pip install -r requirements.txt
     ```
 
-3. **Настройте бота**:
-    - Создайте файл `.env`.
-    - Добавьте переменные окружения:
-      ```env
+3. **Configure the bot**:
+    - Create a `.env` file in the root directory.
+    - Add your bot token:
+```env
       BOT_TOKEN=your_bot_token
       ```
 
-4. **Запустите бота**:
-    ```sh
+4. **Run the bot**:
+```sh
     python bot.py
     ```
