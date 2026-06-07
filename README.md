@@ -24,21 +24,21 @@
 1. **Clone the repository**:
 ```sh
     git clone [https://github.com/YanniszY/StorageTGbot.git](https://github.com/YanniszY/StorageTGbot.git)
-    ```
+```
 
 2. **Install dependencies**:
 ```sh
     pip install -r requirements.txt
-    ```
+```
 
 3. **Configure the bot**:
     - Create a `.env` file in the root directory.
     - Add your bot token:
 ```env
       BOT_TOKEN=your_bot_token
-      ```
+```
 
 4. **Run the bot**:
 ```sh
     python bot.py
-    ```
+```
